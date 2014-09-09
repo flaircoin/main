@@ -1085,24 +1085,24 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
     int rand1 = 0;
     int rand2 = 0;
 
-    if(nHeight < 110000)
+    if(nHeight < 100000)
     {
         nSubsidy = (1 + rand) * COIN;
     }
-    else if(nHeight < 140000)
+    else if(nHeight < 150000)
     {
         cseed_str = prevHash.ToString().substr(7,7);
         cseed = cseed_str.c_str();
         seed = hex2long(cseed);
-        rand1 = generateMTRandom(seed, 99999);
+        rand1 = generateMTRandom(seed, 499999);
         nSubsidy = (1 + rand1) * COIN;
     }
-    else if(nHeight < 140500)
+    else if(nHeight < 170000)
     {
         cseed_str = prevHash.ToString().substr(7,7);
         cseed = cseed_str.c_str();
         seed = hex2long(cseed);
-        rand2 = generateMTRandom(seed, 999999);
+        rand2 = generateMTRandom(seed, 299999);
         nSubsidy = (1 + rand2) * COIN;
     }
     else if(nHeight < 200000)
@@ -1111,25 +1111,25 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
     }
     else if(nHeight < 300000)
     {
-        nSubsidy = 50000 * COIN;
+        nSubsidy = 100000 * COIN;
     }
     else if(nHeight < 400000)
     {
-        nSubsidy = 25000 * COIN;
+        nSubsidy = 100000 * COIN;
     }
     else if(nHeight < 500000)
     {
-        nSubsidy = 12500 * COIN;
+        nSubsidy = 100000 * COIN;
     }
     else if(nHeight < 600000)
     {
-        nSubsidy = 6250 * COIN;
+        nSubsidy = 100 * COIN;
     }
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 4 * 60 * 60; // FlappyCoin: every 4 hours
-static const int64 nTargetSpacing = 60; // FlappyCoin: 1 minutes
+static const int64 nTargetTimespan = 180; // FlairCoin: Retarget every 1 Hour
+static const int64 nTargetSpacing = 90; // FlairCoin: 1.30 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -2928,7 +2928,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "Flappy Coino Silly Bird";
+        const char* pszTimestamp = "Woooooooooooooo!";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2940,13 +2940,13 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1392281929;
+        block.nTime    = 1410295436;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 265310;
 
         if (fTestNet)
         {
-            block.nTime    = 1392281929;
+            block.nTime    = 1410295436;
             block.nNonce   = 265310;
         }
 
@@ -4717,7 +4717,7 @@ void static FlappycoinMiner(CWallet *pwallet)
 {
     printf("FlappycoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("flappycoin-miner");
+    RenameThread("flaircoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

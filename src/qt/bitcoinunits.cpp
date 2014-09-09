@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("FLAP");
-    case kBTC: return QString("kFLAP");
-    case MBTC: return QString("MFLAP");
+    case BTC: return QString("FLR");
+    case kBTC: return QString("kFLR");
+    case MBTC: return QString("MFLR");
     default: return QString("???");
     }
 }

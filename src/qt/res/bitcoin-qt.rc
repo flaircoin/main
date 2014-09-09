@@ -23,10 +23,10 @@ BEGIN
             VALUE "CompanyName",        "Flappycoin"
             VALUE "FileDescription",    "Flappycoin-Qt (OSS GUI client for Flappycoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "flappycoin-qt"
+            VALUE "InternalName",       "flaircoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "flappycoin-qt.exe"
+            VALUE "OriginalFilename",   "flaircoin-qt.exe"
             VALUE "ProductName",        "Flappycoin-Qt"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

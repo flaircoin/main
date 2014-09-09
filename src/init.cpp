@@ -179,12 +179,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("Flappycoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("Flairecoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  flappycoind [options]                     " + "\n" +
-                  "  flappycoind [options] <command> [params]  " + _("Send command to -server or flappycoind") + "\n" +
-                  "  flappycoind [options] help                " + _("List commands") + "\n" +
-                  "  flappycoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  flaircoind [options]                     " + "\n" +
+                  "  flaircoind [options] <command> [params]  " + _("Send command to -server or flaircoind") + "\n" +
+                  "  flaircoind [options] help                " + _("List commands") + "\n" +
+                  "  flaircoind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -194,7 +194,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "flappycoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "flaircoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -297,8 +297,8 @@ std::string HelpMessage()
 {
     string strUsage = _("Options:") + "\n" +
         "  -?                     " + _("This help message") + "\n" +
-        "  -conf=<file>           " + _("Specify configuration file (default: flappycoin.conf)") + "\n" +
-        "  -pid=<file>            " + _("Specify pid file (default: flappycoind.pid)") + "\n" +
+        "  -conf=<file>           " + _("Specify configuration file (default: flaircoin.conf)") + "\n" +
+        "  -pid=<file>            " + _("Specify pid file (default: flaircoind.pid)") + "\n" +
         "  -gen                   " + _("Generate coins (default: 0)") + "\n" +
         "  -datadir=<dir>         " + _("Specify data directory") + "\n" +
         "  -dbcache=<n>           " + _("Set database cache size in megabytes (default: 25)") + "\n" +

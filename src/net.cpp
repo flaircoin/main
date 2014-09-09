@@ -1187,12 +1187,12 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"dnsseed.flappycoin.biz", "dnsseed.flap.so"},
+    {"10.0.0.6", "10.0.0.6"},
     {NULL, NULL}
 };
 
 static const char *strTestNetDNSSeed[][2] = {
-    {"dnsseed.flappycoin.biz", "dnsseed.flap.so"},
+    {"10.0.0.6", "10.0.0.6"},
     {NULL, NULL}
 };
 

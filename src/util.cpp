@@ -995,7 +995,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "flappycoin";
+    const char* pszModule = "flaircoin";
 #endif
     if (pex)
         return strprintf(
@@ -1052,7 +1052,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Flappycoin";
 #else
     // Unix
-    return pathRet / ".flappycoin";
+    return pathRet / ".flaircoin";
 #endif
 #endif
 }
@@ -1093,7 +1093,7 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "flappycoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "flaircoin.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1127,7 +1127,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "flappycoind.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "flaircoind.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

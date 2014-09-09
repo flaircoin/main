@@ -84,7 +84,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no bitcoin URI
-    if(!uri.isValid() || uri.scheme() != QString("flappycoin"))
+    if(!uri.isValid() || uri.scheme() != QString("flaircoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -139,9 +139,9 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     //
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("flappycoin://"))
+    if(uri.startsWith("flaircoin://"))
     {
-        uri.replace(0, 11, "flappycoin:");
+        uri.replace(0, 11, "flaircoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -383,7 +383,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "flappycoin.desktop";
+    return GetAutostartDir() / "flaircoin.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -498,7 +498,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
     header = tr("Flappycoin-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  flappycoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  flaircoin-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 

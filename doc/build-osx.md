@@ -1,4 +1,4 @@
-Mac OS X flappycoind build instructions
+Mac OS X flaircoind build instructions
 ====================================
 
 Authors
@@ -72,14 +72,14 @@ Installing the dependencies using MacPorts is very straightforward.
 
     sudo port install boost db48@+no_java openssl miniupnpc
 
-### Building `flappycoind`
+### Building `flaircoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:flappycoin-project/flappycoin.git flappycoin
-        cd flappycoin
+        git clone git@github.com:flaircoin-project/flaircoin.git flaircoin
+        cd flaircoin
 
-2.  Build flappycoind:
+2.  Build flaircoind:
 
         cd src
         make -f makefile.osx
@@ -107,12 +107,12 @@ If not, you can ensure that the Brew OpenSSL is correctly linked by running
 
 Rerunning "openssl version" should now return the correct version.
 
-### Building `flappycoind`
+### Building `flaircoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:flappycoin-project/flappycoin.git flappycoin
-        cd flappycoin
+        git clone git@github.com:flaircoin-project/flaircoin.git flaircoin
+        cd flaircoin
 
 2.  Modify source in order to pick up the `openssl` library.
 
@@ -122,7 +122,7 @@ Rerunning "openssl version" should now return the correct version.
 
         patch -p1 < contrib/homebrew/makefile.osx.patch
 
-3.  Build flappycoind:
+3.  Build flaircoind:
 
         cd src
         make -f makefile.osx
@@ -134,8 +134,8 @@ Rerunning "openssl version" should now return the correct version.
 Creating a release build
 ------------------------
 
-A flappycoind binary is not included in the Flappycoin-Qt.app bundle. You can ignore
-this section if you are building `flappycoind` for your own use.
+A flaircoind binary is not included in the Flappycoin-Qt.app bundle. You can ignore
+this section if you are building `flaircoind` for your own use.
 
 If you are building `litecond` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -166,20 +166,20 @@ Once dependencies are compiled, creating `Flappycoin-Qt.app` is easy:
 Running
 -------
 
-It's now available at `./flappycoind`, provided that you are still in the `src`
+It's now available at `./flaircoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./flappycoind` to get the filename where it should be put, or just try these
+Run `./flaircoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=flappycoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Flappycoin/flappycoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Flappycoin/flappycoin.conf"
+    echo -e "rpcuser=flaircoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Flappycoin/flaircoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Flappycoin/flaircoin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours.
 
 Other commands:
 
-    ./flappycoind --help  # for a list of command-line options.
-    ./flappycoind -daemon # to start the flappycoin daemon.
-    ./flappycoind help    # When the daemon is running, to get a list of RPC commands
+    ./flaircoind --help  # for a list of command-line options.
+    ./flaircoind -daemon # to start the flaircoin daemon.
+    ./flaircoind help    # When the daemon is running, to get a list of RPC commands

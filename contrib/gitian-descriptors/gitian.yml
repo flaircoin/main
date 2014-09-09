@@ -1,5 +1,5 @@
 ---
-name: "flappycoin"
+name: "flaircoin"
 suites:
 - "lucid"
 architectures:
@@ -20,8 +20,8 @@ packages:
 - "libpng12-dev"
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
-- "url": "https://github.com/flappycoin-project/flappycoin.git"
-  "dir": "flappycoin"
+- "url": "https://github.com/flaircoin-project/flaircoin.git"
+  "dir": "flaircoin"
 files:
 - "miniupnpc-1.9.20140401.tar.gz"
 - "qrencode-3.4.3.tar.bz2"
@@ -40,16 +40,16 @@ script: |
   make $MAKEOPTS install
   cd ..
   #
-  cd flappycoin
+  cd flaircoin
   mkdir -p $OUTDIR/src
   git archive HEAD | tar -x -C $OUTDIR/src
   cp $OUTDIR/src/doc/README.md $OUTDIR
   cp $OUTDIR/src/COPYING $OUTDIR
   cd src
-  make -f makefile.unix STATIC=1 OPENSSL_INCLUDE_PATH="$INSTDIR/include" OPENSSL_LIB_PATH="$INSTDIR/lib" $MAKEOPTS flappycoind USE_UPNP=0 DEBUGFLAGS= USE_SSE2=1
+  make -f makefile.unix STATIC=1 OPENSSL_INCLUDE_PATH="$INSTDIR/include" OPENSSL_LIB_PATH="$INSTDIR/lib" $MAKEOPTS flaircoind USE_UPNP=0 DEBUGFLAGS= USE_SSE2=1
   mkdir -p $OUTDIR/bin/$GBUILD_BITS
-  install -s flappycoind $OUTDIR/bin/$GBUILD_BITS
+  install -s flaircoind $OUTDIR/bin/$GBUILD_BITS
   cd ..
   qmake INCLUDEPATH="$INSTDIR/include" LIBS="-L$INSTDIR/lib" RELEASE=1 USE_QRCODE=0 USE_SSE2=1
   make $MAKEOPTS
-  install flappycoin-qt $OUTDIR/bin/$GBUILD_BITS
+  install flaircoin-qt $OUTDIR/bin/$GBUILD_BITS

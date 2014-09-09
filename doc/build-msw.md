@@ -84,6 +84,6 @@ Flappycoin
 -------
 DOS prompt:
 
-	cd \flappycoin\src
+	cd \flaircoin\src
 	mingw32-make -f makefile.mingw
-	strip flappycoind.exe
+	strip flaircoind.exe

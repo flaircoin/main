@@ -2,7 +2,7 @@ FlairCoin
 ================================
 Current version: 1
 
-![FlappyCoin](http://a57.foxnews.com/global.fncstatic.com/static/managed/img/Entertainment/0/0/Ric%20Flair%20AP%20Graphics%20Bank%20660.jpg)
+![FlairCoin](http://a57.foxnews.com/global.fncstatic.com/static/managed/img/Entertainment/0/0/Ric%20Flair%20AP%20Graphics%20Bank%20660.jpg)
 
 Copyright (c) 2014 Bitcoin Developers
 

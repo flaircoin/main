@@ -6,7 +6,7 @@ Release Process
 ###update (commit) version in sources
 
 
-	flappycoin-qt.pro
+	flaircoin-qt.pro
 	contrib/verifysfbinaries/verify.sh
 	doc/README*
 	share/setup.nsi
@@ -24,7 +24,7 @@ Release Process
 
 ##perform gitian builds
 
- From a directory containing the flappycoin source, gitian-builder and gitian.sigs
+ From a directory containing the flaircoin source, gitian-builder and gitian.sigs
   
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
 	export VERSION=0.8.0
@@ -44,55 +44,55 @@ Release Process
 	mv boost-mingw.patch boost-mingw-gas-cross-compile-2013-03-03.patch
 	wget 'http://download.qt-project.org/official_releases/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz'
 	cd ..
-	./bin/gbuild ../flappycoin/contrib/gitian-descriptors/boost-win32.yml
+	./bin/gbuild ../flaircoin/contrib/gitian-descriptors/boost-win32.yml
 	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../flappycoin/contrib/gitian-descriptors/deps-win32.yml
+	./bin/gbuild ../flaircoin/contrib/gitian-descriptors/deps-win32.yml
 	mv build/out/bitcoin*.zip inputs/
-	./bin/gbuild ../flappycoin/contrib/gitian-descriptors/qt-win32.yml
+	./bin/gbuild ../flaircoin/contrib/gitian-descriptors/qt-win32.yml
 	mv build/out/qt*.zip inputs/
 
 
- Build flappycoind and flappycoin-qt on Linux32, Linux64, and Win32:
+ Build flaircoind and flaircoin-qt on Linux32, Linux64, and Win32:
   
-	./bin/gbuild --commit flappycoin=v${VERSION} ../flappycoin/contrib/gitian-descriptors/gitian.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../flappycoin/contrib/gitian-descriptors/gitian.yml
+	./bin/gbuild --commit flaircoin=v${VERSION} ../flaircoin/contrib/gitian-descriptors/gitian.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../flaircoin/contrib/gitian-descriptors/gitian.yml
 	pushd build/out
-	zip -r flappycoin-${VERSION}-linux-gitian.zip *
-	mv flappycoin-${VERSION}-linux-gitian.zip ../../
+	zip -r flaircoin-${VERSION}-linux-gitian.zip *
+	mv flaircoin-${VERSION}-linux-gitian.zip ../../
 	popd
-	./bin/gbuild --commit flappycoin=v${VERSION} ../flappycoin/contrib/gitian-descriptors/gitian-win32.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win32 --destination ../gitian.sigs/ ../flappycoin/contrib/gitian-descriptors/gitian-win32.yml
+	./bin/gbuild --commit flaircoin=v${VERSION} ../flaircoin/contrib/gitian-descriptors/gitian-win32.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win32 --destination ../gitian.sigs/ ../flaircoin/contrib/gitian-descriptors/gitian-win32.yml
 	pushd build/out
-	zip -r flappycoin-${VERSION}-win32-gitian.zip *
-	mv flappycoin-${VERSION}-win32-gitian.zip ../../
+	zip -r flaircoin-${VERSION}-win32-gitian.zip *
+	mv flaircoin-${VERSION}-win32-gitian.zip ../../
 	popd
 
   Build output expected:
 
-  1. linux 32-bit and 64-bit binaries + source (flappycoin-${VERSION}-linux-gitian.zip)
-  2. windows 32-bit binary, installer + source (flappycoin-${VERSION}-win32-gitian.zip)
+  1. linux 32-bit and 64-bit binaries + source (flaircoin-${VERSION}-linux-gitian.zip)
+  2. windows 32-bit binary, installer + source (flaircoin-${VERSION}-win32-gitian.zip)
   3. Gitian signatures (in gitian.sigs/${VERSION}[-win32]/(your gitian key)/
 
 repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 **Linux .tar.gz:**
 
-	unzip flappycoin-${VERSION}-linux-gitian.zip -d flappycoin-${VERSION}-linux
-	tar czvf flappycoin-${VERSION}-linux.tar.gz flappycoin-${VERSION}-linux
-	rm -rf flappycoin-${VERSION}-linux
+	unzip flaircoin-${VERSION}-linux-gitian.zip -d flaircoin-${VERSION}-linux
+	tar czvf flaircoin-${VERSION}-linux.tar.gz flaircoin-${VERSION}-linux
+	rm -rf flaircoin-${VERSION}-linux
 
 **Windows .zip and setup.exe:**
 
-	unzip flappycoin-${VERSION}-win32-gitian.zip -d flappycoin-${VERSION}-win32
-	mv flappycoin-${VERSION}-win32/flappycoin-*-setup.exe .
-	zip -r flappycoin-${VERSION}-win32.zip bitcoin-${VERSION}-win32
-	rm -rf flappycoin-${VERSION}-win32
+	unzip flaircoin-${VERSION}-win32-gitian.zip -d flaircoin-${VERSION}-win32
+	mv flaircoin-${VERSION}-win32/flaircoin-*-setup.exe .
+	zip -r flaircoin-${VERSION}-win32.zip bitcoin-${VERSION}-win32
+	rm -rf flaircoin-${VERSION}-win32
 
 **Perform Mac build:**
 
   OSX binaries are created by Gavin Andresen on a 32-bit, OSX 10.6 machine.
 
-	qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=1 flappycoin-qt.pro
+	qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=1 flaircoin-qt.pro
 	make
 	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
 	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
@@ -110,14 +110,14 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 * create SHA256SUMS for builds, and PGP-sign it
 
-* update flappycoin.org version
+* update flaircoin.org version
   make sure all OS download links go to the right versions
 
 * update forum version
 
 * update wiki download links
 
-* update wiki changelog: [https://en.flappycoin.it/wiki/Changelog](https://en.bitcoin.it/wiki/Changelog)
+* update wiki changelog: [https://en.flaircoin.it/wiki/Changelog](https://en.bitcoin.it/wiki/Changelog)
 
 Commit your signature to gitian.sigs:
 
@@ -132,32 +132,32 @@ Commit your signature to gitian.sigs:
 
 ### After 3 or more people have gitian-built, repackage gitian-signed zips:
 
-From a directory containing flappycoin source, gitian.sigs and gitian zips
+From a directory containing flaircoin source, gitian.sigs and gitian zips
 
 	export VERSION=0.5.1
-	mkdir flappycoin-${VERSION}-linux-gitian
-	pushd flappycoin-${VERSION}-linux-gitian
-	unzip ../flappycoin-${VERSION}-linux-gitian.zip
+	mkdir flaircoin-${VERSION}-linux-gitian
+	pushd flaircoin-${VERSION}-linux-gitian
+	unzip ../flaircoin-${VERSION}-linux-gitian.zip
 	mkdir gitian
-	cp ../flappycoin/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../flaircoin/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}/); do
-	 cp ../gitian.sigs/${VERSION}/${signer}/flappycoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}/${signer}/flappycoin-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}/${signer}/flaircoin-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}/${signer}/flaircoin-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r flappycoin-${VERSION}-linux-gitian.zip *
-	cp flappycoin-${VERSION}-linux-gitian.zip ../
+	zip -r flaircoin-${VERSION}-linux-gitian.zip *
+	cp flaircoin-${VERSION}-linux-gitian.zip ../
 	popd
-	mkdir flappycoin-${VERSION}-win32-gitian
-	pushd flappycoin-${VERSION}-win32-gitian
-	unzip ../flappycoin-${VERSION}-win32-gitian.zip
+	mkdir flaircoin-${VERSION}-win32-gitian
+	pushd flaircoin-${VERSION}-win32-gitian
+	unzip ../flaircoin-${VERSION}-win32-gitian.zip
 	mkdir gitian
-	cp ../flappycoin/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../flaircoin/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}-win32/); do
-	 cp ../gitian.sigs/${VERSION}-win32/${signer}/flappycoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}-win32/${signer}/flappycoin-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}-win32/${signer}/flaircoin-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}-win32/${signer}/flaircoin-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r flappycoin-${VERSION}-win32-gitian.zip *
-	cp flappycoin-${VERSION}-win32-gitian.zip ../
+	zip -r flaircoin-${VERSION}-win32-gitian.zip *
+	cp flaircoin-${VERSION}-win32-gitian.zip ../
 	popd
 
 - Upload gitian zips to SourceForge
