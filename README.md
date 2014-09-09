@@ -1,17 +1,12 @@
-FlappyCoin 
+FlairCoin
 ================================
-Current version: 3.2
+Current version: 1
 
-DOMAIN: http://flappycoin.biz
-
-EXPLORER: http://explorer.flappycoin.biz
-
-
-![FlappyCoin](http://flappycoin.biz/flap.nsf/flapcoin_med.png)
+![FlappyCoin](http://a57.foxnews.com/global.fncstatic.com/static/managed/img/Entertainment/0/0/Ric%20Flair%20AP%20Graphics%20Bank%20660.jpg)
 
 Copyright (c) 2014 Bitcoin Developers
 
-Copyright (c) 2014 FlappyCoin Developers
+Copyright (c) 2014 FlairCoin Developers
 
 
 Specifications:
@@ -50,8 +45,6 @@ Block 600,000+: 50 + Transaction Fees Reward
 
 Download Links:
 ----------------
-
-http://flappycoin.biz
 
 License
 -------
