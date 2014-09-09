@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Flappycoin</source>
-        <translation>Informatio de Flappycoin</translation>
+        <source>About Flaircoin</source>
+        <translation>Informatio de Flaircoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Flappycoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Flappycoin&lt;/b&gt; versio</translation>
+        <source>&lt;b&gt;Flaircoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Flaircoin&lt;/b&gt; versio</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -33,8 +33,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+0"/>
-        <source>The Flappycoin developers</source>
-        <translation>Flappycoin curatores</translation>
+        <source>The Flaircoin developers</source>
+        <translation>Flaircoin curatores</translation>
     </message>
 </context>
 <context>
@@ -66,8 +66,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Flappycoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Haec sunt inscriptiones Flappycoin tuae pro accipendo pensitationes.  Cupias variam ad quemque mittentem dare ut melius scias quem tibi pensare.</translation>
+        <source>These are your Flaircoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Haec sunt inscriptiones Flaircoin tuae pro accipendo pensitationes.  Cupias variam ad quemque mittentem dare ut melius scias quem tibi pensare.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -81,8 +81,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Flappycoin address</source>
-        <translation>Signa nuntium ut demonstres inscriptionem Flappycoin a te possessam esse</translation>
+        <source>Sign a message to prove you own a Flaircoin address</source>
+        <translation>Signa nuntium ut demonstres inscriptionem Flaircoin a te possessam esse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -106,8 +106,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Flappycoin address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specificata inscriptione Flappycoin</translation>
+        <source>Verify a message to ensure it was signed with a specified Flaircoin address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specificata inscriptione Flaircoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -121,7 +121,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Flappycoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Flaircoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Hae sunt inscriptiones mittendi pensitationes.  Semper inspice quantitatem et inscriptionem accipiendi antequam nummos mittis.</translation>
     </message>
     <message>
@@ -274,8 +274,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="-56"/>
-        <source>Flappycoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your flaircoins from being stolen by malware infecting your computer.</source>
-        <translation>Flappycoin iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
+        <source>Flaircoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your flaircoins from being stolen by malware infecting your computer.</source>
+        <translation>Flaircoin iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -373,8 +373,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Flappycoin</source>
-        <translation>Monstra informationem de Flappycoin</translation>
+        <source>Show information about Flaircoin</source>
+        <translation>Monstra informationem de Flaircoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -418,13 +418,13 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Flappycoin address</source>
-        <translation>Mitte nummos ad inscriptionem Flappycoin</translation>
+        <source>Send coins to a Flaircoin address</source>
+        <translation>Mitte nummos ad inscriptionem Flaircoin</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Flappycoin</source>
-        <translation>Muta configurationis optiones pro Flappycoin</translation>
+        <source>Modify configuration options for Flaircoin</source>
+        <translation>Muta configurationis optiones pro Flaircoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -454,8 +454,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Flappycoin</source>
-        <translation>Flappycoin</translation>
+        <source>Flaircoin</source>
+        <translation>Flaircoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -479,8 +479,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Flappycoin</source>
-        <translation>&amp;Informatio de Flappycoin</translation>
+        <source>&amp;About Flaircoin</source>
+        <translation>&amp;Informatio de Flaircoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -499,13 +499,13 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Flappycoin addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus Flappycoin ut demonstres te eas possidere</translation>
+        <source>Sign messages with your Flaircoin addresses to prove you own them</source>
+        <translation>Signa nuntios cum tuis inscriptionibus Flaircoin ut demonstres te eas possidere</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Flappycoin addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Flappycoin</translation>
+        <source>Verify messages to ensure they were signed with specified Flaircoin addresses</source>
+        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Flaircoin</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -535,13 +535,13 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+47"/>
-        <source>Flappycoin client</source>
-        <translation>Flappycoin cliens</translation>
+        <source>Flaircoin client</source>
+        <translation>Flaircoin cliens</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Flappycoin network</source>
-        <translation><numerusform>%n activa conexio ad rete Flappycoin</numerusform><numerusform>%n activae conexiones ad rete Flappycoin</numerusform></translation>
+        <source>%n active connection(s) to Flaircoin network</source>
+        <translation><numerusform>%n activa conexio ad rete Flaircoin</numerusform><numerusform>%n activae conexiones ad rete Flaircoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -655,8 +655,8 @@ Inscriptio: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Flappycoin address or malformed URI parameters.</source>
-        <translation>URI intellegi non posse!  Huius causa possit inscriptionem Flappycoin non validam aut URI parametra maleformata.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Flaircoin address or malformed URI parameters.</source>
+        <translation>URI intellegi non posse!  Huius causa possit inscriptionem Flaircoin non validam aut URI parametra maleformata.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,8 +670,8 @@ Inscriptio: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Flappycoin can no longer continue safely and will quit.</source>
-        <translation>Error fatalis accidit.  Flappycoin nondum pergere tute potest, et exibit.</translation>
+        <source>A fatal error occurred. Flaircoin can no longer continue safely and will quit.</source>
+        <translation>Error fatalis accidit.  Flaircoin nondum pergere tute potest, et exibit.</translation>
     </message>
 </context>
 <context>
@@ -736,8 +736,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Flappycoin address.</source>
-        <translation>Inscriptio inserta &quot;%1&quot; non valida inscriptio Flappycoin est.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Flaircoin address.</source>
+        <translation>Inscriptio inserta &quot;%1&quot; non valida inscriptio Flaircoin est.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -755,8 +755,8 @@ Inscriptio: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Flappycoin-Qt</source>
-        <translation>Flappycoin-Qt</translation>
+        <source>Flaircoin-Qt</source>
+        <translation>Flaircoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -818,13 +818,13 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Flappycoin after logging in to the system.</source>
-        <translation>Pelle Flappycoin per se postquam in systema inire.</translation>
+        <source>Automatically start Flaircoin after logging in to the system.</source>
+        <translation>Pelle Flaircoin per se postquam in systema inire.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Flappycoin on system login</source>
-        <translation>&amp;Pelle Flappycoin cum inire systema</translation>
+        <source>&amp;Start Flaircoin on system login</source>
+        <translation>&amp;Pelle Flaircoin cum inire systema</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -843,8 +843,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Flappycoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aperi per se portam clientis Flappycoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+        <source>Automatically open the Flaircoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aperi per se portam clientis Flaircoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -853,8 +853,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Flappycoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connecte ad rete Flappycoin per SOCKS vicarium (e.g. quando conectens per Tor).</translation>
+        <source>Connect to the Flaircoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connecte ad rete Flaircoin per SOCKS vicarium (e.g. quando conectens per Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -928,8 +928,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Flappycoin.</source>
-        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam Flappycoin iterum initiatum erit.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Flaircoin.</source>
+        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam Flaircoin iterum initiatum erit.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -943,8 +943,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Flappycoin addresses in the transaction list or not.</source>
-        <translation>Num monstrare inscriptiones Flappycoin in enumeratione transactionum.</translation>
+        <source>Whether to show Flaircoin addresses in the transaction list or not.</source>
+        <translation>Num monstrare inscriptiones Flaircoin in enumeratione transactionum.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -995,8 +995,8 @@ Inscriptio: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Flappycoin.</source>
-        <translation>Haec configuratio effectiva erit postquam Flappycoin iterum initiatum erit.</translation>
+        <source>This setting will take effect after restarting Flaircoin.</source>
+        <translation>Haec configuratio effectiva erit postquam Flaircoin iterum initiatum erit.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1014,8 +1014,8 @@ Inscriptio: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Flappycoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Flappycoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Flaircoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Flaircoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,7 +1069,7 @@ Inscriptio: %4
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start flaircoin: click-to-pay handler</source>
-        <translation>Flappycoin incipere non potest: cliccare-ad-pensandum handler</translation>
+        <translation>Flaircoin incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
 </context>
 <context>
@@ -1218,8 +1218,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Flappycoin-Qt help message to get a list with possible Flappycoin command-line options.</source>
-        <translation>Monstra nuntium auxilii Flappycoin-Qt ut videas enumerationem possibilium optionum Flappycoin mandati initiantis.</translation>
+        <source>Show the Flaircoin-Qt help message to get a list with possible Flaircoin command-line options.</source>
+        <translation>Monstra nuntium auxilii Flaircoin-Qt ut videas enumerationem possibilium optionum Flaircoin mandati initiantis.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1238,13 +1238,13 @@ Inscriptio: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Flappycoin - Debug window</source>
-        <translation>Flappycoin - Fenestra debug</translation>
+        <source>Flaircoin - Debug window</source>
+        <translation>Flaircoin - Fenestra debug</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Flappycoin Core</source>
-        <translation>Flappycoin Nucleus</translation>
+        <source>Flaircoin Core</source>
+        <translation>Flaircoin Nucleus</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1253,8 +1253,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Flappycoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Aperi plicam catalogi de Flappycoin debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
+        <source>Open the Flaircoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Aperi plicam catalogi de Flaircoin debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1263,8 +1263,8 @@ Inscriptio: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Flappycoin RPC console.</source>
-        <translation>Bene ventio in terminale RPC de Flappycoin.</translation>
+        <source>Welcome to the Flaircoin RPC console.</source>
+        <translation>Bene ventio in terminale RPC de Flaircoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1447,8 +1447,8 @@ Inscriptio: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Flappycoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Insero inscriptionem Flappycoin (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Flaircoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Insero inscriptionem Flaircoin (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1512,8 +1512,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Flappycoin address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem Flappycoin a te possessa esse</translation>
+        <source>Sign the message to prove you own this Flaircoin address</source>
+        <translation>Signa nuntium ut demonstres hanc inscriptionem Flaircoin a te possessa esse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1548,8 +1548,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Flappycoin address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Flappycoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Flaircoin address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Flaircoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1564,8 +1564,8 @@ Inscriptio: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Flappycoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Insere inscriptionem Flappycoin (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Flaircoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Insere inscriptionem Flaircoin (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1574,8 +1574,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Flappycoin signature</source>
-        <translation>Insere signationem Flappycoin</translation>
+        <source>Enter Flaircoin signature</source>
+        <translation>Insere signationem Flaircoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1648,8 +1648,8 @@ Inscriptio: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Flappycoin developers</source>
-        <translation>Flappycoin curatores</translation>
+        <source>The Flaircoin developers</source>
+        <translation>Flaircoin curatores</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2186,8 +2186,8 @@ Inscriptio: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Flappycoin version</source>
-        <translation>Versio de Flappycoin</translation>
+        <source>Flaircoin version</source>
+        <translation>Versio de Flaircoin</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2305,7 +2305,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Flappycoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Flaircoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, necesse est te rpcpassword constituere in plica configurationis:
 %s
@@ -2316,7 +2316,7 @@ rpcpassword=%s
 Nomen usoris et tessera eadem esse NON POSSUNT.
 Si plica non existit, eam crea cum permissionibus ut eius dominus tantum sinitur id legere.
 Quoque hortatur alertnotify constituere ut tu notificetur de problematibus;
-exempli gratia: alertnotify=echo %%s | mail -s &quot;Flappycoin Notificatio&quot; admin@foo.com
+exempli gratia: alertnotify=echo %%s | mail -s &quot;Flaircoin Notificatio&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2331,8 +2331,8 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Flappycoin Notificatio&quot
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Flappycoin is probably already running.</source>
-        <translation>Non posse serare datorum indicem %s.  Flappycoin probabiliter iam operatur.</translation>
+        <source>Cannot obtain a lock on data directory %s. Flaircoin is probably already running.</source>
+        <translation>Non posse serare datorum indicem %s.  Flaircoin probabiliter iam operatur.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2376,8 +2376,8 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Flappycoin Notificatio&quot
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Flappycoin will not work properly.</source>
-        <translation>Monitio: Sodes cura ut dies tempusque computatri tui recti sunt!  Si horologium tuum pravum est, Flappycoin non proprie fungetur.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Flaircoin will not work properly.</source>
+        <translation>Monitio: Sodes cura ut dies tempusque computatri tui recti sunt!  Si horologium tuum pravum est, Flaircoin non proprie fungetur.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2626,8 +2626,8 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Flappycoin Notificatio&quot
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Flappycoin Wiki for SSL setup instructions)</source>
-        <translation>Optiones SSL: (vide vici de Flappycoin pro instructionibus SSL configurationis)</translation>
+        <source>SSL options: (see the Flaircoin Wiki for SSL setup instructions)</source>
+        <translation>Optiones SSL: (vide vici de Flaircoin pro instructionibus SSL configurationis)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2816,13 +2816,13 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Flappycoin Notificatio&quot
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Flappycoin</source>
-        <translation>Error legendi wallet.dat: Cassidili necesse est recentior versio Flappycoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Flaircoin</source>
+        <translation>Error legendi wallet.dat: Cassidili necesse est recentior versio Flaircoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Flappycoin to complete</source>
-        <translation>Cassidili necesse erat rescribi: Repelle Flappycoin ut compleas</translation>
+        <source>Wallet needed to be rewritten: restart Flaircoin to complete</source>
+        <translation>Cassidili necesse erat rescribi: Repelle Flaircoin ut compleas</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2881,8 +2881,8 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Flappycoin Notificatio&quot
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Flappycoin is probably already running.</source>
-        <translation>Non posse conglutinare ad %s in hoc cumputatro.  Flappycoin probabiliter iam operatur.</translation>
+        <source>Unable to bind to %s on this computer. Flaircoin is probably already running.</source>
+        <translation>Non posse conglutinare ad %s in hoc cumputatro.  Flaircoin probabiliter iam operatur.</translation>
     </message>
     <message>
         <location line="+64"/>

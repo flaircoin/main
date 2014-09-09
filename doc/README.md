@@ -1,4 +1,4 @@
-Flappycoin 3.2
+Flaircoin 3.2
 ====================
 
 Copyright (c) 2014 Bitcoin Developers

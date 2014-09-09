@@ -14,7 +14,7 @@ To Build
 	cd src/
 	make -f makefile.unix		# Headless flaircoin
 
-See readme-qt.rst for instructions on building Flappycoin-Qt, the graphical user interface.
+See readme-qt.rst for instructions on building Flaircoin-Qt, the graphical user interface.
 
 Dependencies
 ---------------------
