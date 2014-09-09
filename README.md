@@ -13,7 +13,7 @@ Specifications:
 ---------------
 Algorithm: Scrypt
 
-Max number of coins 70,000,000,000 FLAP in circulation after 3 years
+Max number of coins 70,000,000,000 FLR in circulation after 3 years
 
 Block Time: 60 Seconds
 
@@ -49,5 +49,5 @@ Download Links:
 License
 -------
 
-Flappycoin is released under the terms of the MIT license. See `COPYING` for more
+Flaircoin is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
